@@ -1,0 +1,360 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写给你的一封信</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        love: {
+                            primary: '#FF4B91',
+                            secondary: '#FF85A1',
+                            accent: '#FFB6C1',
+                            light: '#FFF0F5',
+                            dark: '#E63946'
+                        }
+                    },
+                    fontFamily: {
+                        romantic: ['Dancing Script', 'cursive', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .text-shadow-lg {
+                text-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.08);
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+            .animate-float-delay-1 {
+                animation: float 6s ease-in-out 1s infinite;
+            }
+            .animate-float-delay-2 {
+                animation: float 6s ease-in-out 2s infinite;
+            }
+            .animate-float-delay-3 {
+                animation: float 6s ease-in-out 3s infinite;
+            }
+            .animate-float-delay-4 {
+                animation: float 6s ease-in-out 4s infinite;
+            }
+            .animate-float-delay-5 {
+                animation: float 6s ease-in-out 5s infinite;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+                100% { transform: translateY(0px); }
+            }
+            .bg-heart-pattern {
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF4B91' fill-opacity='0.1'%3E%3Cpath d='M36 34c-.575 0-1.122.19-1.568.514C32.204 30.424 28.947 28 25 28c-4.168 0-7.75.967-10.5 2.632C9.356 26.965 5.764 24 2 24c0 4.361 2.657 8.27 6.5 10.728C11.07 34.12 13.47 36 16.5 36c1.775 0 3.427-.43 4.857-1.184.736.64 1.652 1.184 2.643 1.184 1.035 0 2.007-.37 2.807-1.015C34.822 35.672 35.41 36 36 36c1.657 0 3-1.343 3-3 0-1.31-.845-2.417-2-2.828V27c0-1.657-1.343-3-3-3h-1.828c-.41-.81-1.114-1.512-1.96-2H25c-2.76 0-5 2.24-5 5h4c0-1.105.895-2 2-2s2 .895 2 2h2c0-2.76-2.24-5-5-5h-2c-2.206 0-4 1.794-4 4v.172c-1.178-.474-2.537-.746-4-.746-3.866 0-7 3.134-7 7 0 3.27 2.107 6.033 5 7.193V40c0 1.657 1.343 3 3 3h1.193c1.16.893 2.923 1.96 5.054 1.96 1.712 0 3.323-.544 4.643-1.504C34.804 45.412 35.85 46 37 46c2.206 0 4-1.794 4-4v-2.828c.712.23 1.435.34 2.172.34 2.206 0 4-1.794 4-4 0-1.754-.893-3.335-2.244-4.357C45.04 33.376 41.66 32 38 32c-.845 0-1.666.124-2.417.357C34.893 31.335 34 29.754 34 28h-2c0 1.105-.895 2-2 2s-2-.895-2-2h-2c0 2.76 2.24 5 5 5h1.828c.846.488 1.55 1.19 1.96 2H36c1.657 0 3-1.343 3-3 0-.59-.187-1.135-.504-1.603.14-.312.243-.64.243-.97 0-1.105-.895-2-2-2s-2 .895-2 2c0 .203.054.394.146.571-.216.104-.432.218-.648.34C33.115 32.127 32.09 32 31 32c-2.206 0-4 1.794-4 4 0 1.105.895 2 2 2s2-.895 2-2c0-.53-.173-1.01-.464-1.414C29.59 34.17 27.86 34 26 34c-2.76 0-5 2.24-5 5s2.24 5 5 5c1.86 0 3.59-.17 5.036-.586.291.404.464.884.464 1.414 0 1.105-.895 2-2 2s-2-.895-2-2c0-.203-.054-.394-.146-.571.216-.104.432-.218.648-.34C27.885 41.873 28.91 42 30 42c2.206 0 4-1.794 4-4 0-1.105-.895-2-2-2s-2 .895-2 2c0 .53.173 1.01.464 1.414C26.41 41.83 24.68 42 23 42c-2.76 0-5-2.24-5-5s2.24-5 5-5c1.68 0 3.41.17 4.536.586.291-.404.464-.884.464-1.414 0-1.105-.895-2-2-2s-2 .895-2 2c0 .53.173 1.01.464 1.414C23.41 37.83 21.68 38 20 38c-2.76 0-5-2.24-5-5s2.24-5 5-5c1.68 0 3.41.17 4.536.586.291-.404.464-.884.464-1.414 0-1.105-.895-2-2-2s-2 .895-2 2c0 .53.173 1.01.464 1.414C20.41 33.83 18.68 34 17 34c-1.47 0-2.87-.28-4.15-.776C10.427 31.27 9 29.024 9 26.5c0-1.38.55-2.63 1.414-3.586C11.37 22.55 12.62 22 14 22c1.47 0 2.87.28 4.15.776C20.573 19.27 22 17.024 22 14.5c0-2.76-2.24-5-5-5-.833 0-1.643.134-2.414.386C12.63 9.55 11.38 9 10 9c-2.76 0-5 2.24-5 5 0 2.76 2.24 5 5 5 .833 0 1.643-.134 2.414-.386C11.37 14.45 10.12 14 9 14c-.93 0-1.827.24-2.647.66C4.24 12.24 3 10.44 3 8.5c0-3.038 2.462-5.5 5.5-5.5 1.94 0 3.68.99 4.694 2.478C14.32.99 16.06 0 18 0c2.48 0 4.5 2.02 4.5 4.5 0 1.94-.99 3.68-2.478 4.694C21.01 5.68 22.76 4.5 24.76 4.5c1.94 0 3.68.99 4.694 2.478C29.32 5.68 31.06 4.5 33 4.5c2.48 0 4.5 2.02 4.5 4.5 0 1.94-.99 3.68-2.478 4.694C34.01 9.68 35.76 8.5 37.76 8.5c.83 0 1.64.13 2.414.386C40.37 8.45 41.62 8 43 8c2.76 0 5 2.24 5 5 0 2.76-2.24 5-5 5-.833 0-1.643-.134-2.414-.386C42.63 13.45 41.38 13 40 13c-1.47 0-2.87.28-4.15.776C35.427 10.27 34 8.024 34 5.5c0-2.76-2.24-5-5-5-1.47 0-2.87.28-4.15.776C28.573 2.27 27 0.024 27 0c-2.48 0-4.5 2.02-4.5 4.5 0 1.94.99 3.68 2.478 4.694C24.01 5.68 22.26 4.5 20.26 4.5c-.83 0-1.64.13-2.414.386C17.63 4.45 16.38 4 15 4c-2.76 0-5 2.24-5 5 0 2.76 2.24 5 5 5 .833 0 1.643-.134 2.414-.386C14.37 13.45 13.12 13 12 13c-1.47 0-2.87.28-4.15.776C7.427 10.27 6 8.024 6 5.5c0-1.38-.55-2.63-1.414-3.586C4.63 1.55 3.38 1 2 1c-1.657 0-3 1.343-3 3 0 1.657 1.343 3 3 3 .575 0 1.122-.19 1.568-.514C2.796 9.576 6.053 12 10 12c4.168 0 7.75-.967 10.5-2.632C24.644 13.035 28.236 16 32 16c.845 0 1.666-.124 2.417-.357C35.107 16.665 36 18.246 36 20v1.172c1.178.474 2.537.746 4 .746 3.866 0 7-3.134 7-7 0-1.657-1.343-3-3-3h-1.193c-1.16-.893-2.923-1.96-5.054-1.96-1.712 0-3.323.544-4.643 1.504C33.196 9.588 32.15 9 31 9c-2.206 0-4 1.794-4 4v2.828c-.712-.23-1.435-.34-2.172-.34-2.206 0-4 1.794-4 4 0 1.754.893 3.335 2.244 4.357.714-.117 1.45-.187 2.206-.187 3.66 0 7.04 1.376 9.244 3.643zm-6 12c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-love-light min-h-screen overflow-x-hidden">
+    <!-- 粒子爱心动画容器 -->
+     <div id="particles-container" class="fixed inset-0 z-50 flex items-center justify-center bg-love-light">
+        <canvas id="particles-canvas" class="w-full h-full"></canvas>
+        <div id="loading-text" class="absolute bottom-20 text-center w-full text-love-primary font-romantic text-2xl">准备中，请稍等</div>
+    </div>
+
+    <!-- 表白页面 -->
+    <div id="confession-page" class="fixed inset-0 z-10 hidden">
+        <!-- 爱心背景装饰 -->
+        <div class="absolute inset-0 bg-heart-pattern opacity-20"></div>
+        
+        <!-- 漂浮的爱心装饰 -->
+        <div class="absolute top-10 left-10 text-love-primary opacity-60 text-4xl animate-float">
+            <i class="fa fa-heart"></i>
+        </div>
+        <div class="absolute top-20 right-20 text-love-secondary opacity-60 text-3xl animate-float-delay-1">
+            <i class="fa fa-heart"></i>
+        </div>
+        <div class="absolute bottom-20 left-1/4 text-love-accent opacity-60 text-4xl animate-float-delay-2">
+            <i class="fa fa-heart"></i>
+        </div>
+        <div class="absolute bottom-32 right-1/4 text-love-primary opacity-60 text-3xl animate-float-delay-3">
+            <i class="fa fa-heart"></i>
+        </div>
+        <div class="absolute top-1/3 left-1/5 text-love-secondary opacity-60 text-3xl animate-float-delay-4">
+            <i class="fa fa-heart"></i>
+        </div>
+        <div class="absolute top-1/2 right-1/5 text-love-accent opacity-60 text-4xl animate-float-delay-5">
+            <i class="fa fa-heart"></i>
+        </div>
+        <!-- 内容容器 -->
+
+        <audio id="bg-music" autoplay loop onended="this.currentTime=0;this.play();" class="fixed bottom-4 right-4 z-50 bg-white/80 p-2 rounded-lg shadow-lg">
+            <source src="Pianoboy高至豪 - The Truth That You Leave.mp3" type="audio/mpeg">
+          </audio>
+          <script>
+              // 监听页面点击事件以触发音乐播放（解决浏览器自动播放限制）
+              document.addEventListener('click', function() {
+                  const audio = document.getElementById('bg-music');
+                  if (audio.paused) {
+                      audio.play().catch(error => console.log('播放失败:', error));
+                  }
+              }, { once: true });
+              // 监听触摸事件以支持移动设备
+              document.addEventListener('touchstart', function() {
+                  const audio = document.getElementById('bg-music');
+                  if (audio.paused) {
+                      audio.play().catch(error => console.log('播放失败:', error));
+                  }
+              }, { once: true });
+          </script>
+        </audio>
+        <div class="container mx-auto px-4 py-12 flex flex-col items-center justify-center min-h-screen">
+            <!-- 标题格子 -->
+            <div class="w-full max-w-3xl bg-white/80 backdrop-blur-sm rounded-xl shadow-xl p-8 mb-8 transform transition-all duration-700 hover:shadow-2xl">
+                <h1 class="text-center text-love-primary font-romantic text-[clamp(2.5rem,5vw,4rem)] font-bold text-shadow-lg mb-4">写给你的一封信</h1>
+                <div class="w-32 h-1 bg-love-primary mx-auto mb-6 rounded-full"></div>
+            </div>
+
+             <!-- 内容格子 -->
+            <div class="w-full max-w-3xl bg-white/80 backdrop-blur-sm rounded-xl shadow-xl p-8 transform transition-all duration-700 hover:shadow-2xl overflow-y-auto max-h-[80vh]">
+                <p class="text-love-dark text-[clamp(1.1rem,2.8vw,1.4rem)] leading-loose tracking-wide mb-6 text-left">你好，俞宛彤，本来这封信我是不期望你能看到的，毕竟100分之1的概率很小，而且我也不相信你会全部拆开，这封信可能代表了我们遗憾最终，不知道你能不能看到这封信，也不知道、你看到这封信的时候是怎么样的，我是怎么样的，我们的关系又会是怎么样的，因为我始终认为你只是把我当做朋友，而且友情也比爱情长久，今天是2025年6月15日凌晨一点十四分，我终于把代码和网站写好了，刚开始写这封信，你知道吗，我做了10个小时呢，屁股都坐麻了，腰都快断了，攻破了6个不认识的软件，豆包和百度和翻译器都要被我搞破防了，千纸鹤叠了我100个，也是10个小时呢，我只敢每天晚上熄灯躲在厕所里拿个凳子坐着，当时热的我挥汗如雨下，蚊子也拿我当自助餐，原谅我手残叠的不好，我要是没记错的话，直到今天我们已经认识了32天，虽然认识的时间不长，但我想跟你说真的很喜欢你，你好像把我内心的性格都猜中了一半，我有两个性格，外表一个 内心一个，有点像你口中常说的人格分裂，我的外表看起来大大咧咧疯疯癫癫的，看起来很坚强很佛系，但我的内心世界我是很少很少向别人透露一点点的，我的伤心事都会在夜里慢慢的消化，我承认我很缺爱，我的内心世界我也不想让别人走进来，但我也很想有一个人了解我，体谅我，我真的好累，回想起我们之前，不知道你是否记得，当时我们还不认识，但在校园里我们常常遇见 对视，当时我一眼看去就觉得你不简单，可能是一见钟情吧，但你也知道我怂，刚认识你的时候是2025年5月12日下午在学校的第三个球场，你过来加我们一队，当时我们打的挺开心的，你的开朗乐观的形象以及你鼓掌的习惯都深深的刻在我的心里，我还是不敢主动出击，直到后来我们在食堂相遇你第一次约我中午去打球，还带了一瓶酒，当时我才知道你酒精过敏和你有自残的行为，我当时也是感同身受吧，但我现在想告诉你我对你绝对不止感同身受的情绪和师傅这个身份，我想跟你说我喜欢你，当时挺想劝你的，但又想起来我跟你并没有什么关系，也就放弃了，然后你就提出来你想跟我们学剪辑，我也是编了一大堆理由让你进入了我的名下，我耐心的教你，你聪明和外向 开朗 活泼 爱玩的性格真的当时就让我喜欢上了你，你总是在我教学的时候捣乱，我说实话从来没怪过你，反之你收敛一点点不要总是这样会打扰到别人，我会更喜欢你，但我怕你不喜欢我，所以说我一直不敢说出口，就算到了现在我也不敢说，我敢保证这不是新鲜感也不是其他什么乱七八糟的，我是真心喜欢你，但我也不打算跟你说，我这封信我也没想过你能看见，当时我们相处的很好，汤阳老师看到了叫我们注意点我也直接不理她，5月20日的时候我给你约定了你不伤害自己我不抽烟，当时我满心欢喜的期待着你是因为我而改变的，但我错了，在5月24日的时候，当你说你不想戒的时候我真的很伤心你知道吗，回信学校那几天我对你们情绪都装作很正常，但在你们没在意的地方我才能露出我面具下隐藏的伤心，汤阳老师看出来了她安慰了我好久，我问了她一句：那我走了之后他还是不听话你会放弃她吗，她淡淡的回复了我：我是班主任我没得选，但你有，言外之意我也听出来了，我真的伤心了好久，我也不知道我为什么会那么爱你，你常常说我嘴硬心软，不管是当时还是现在我都没有放弃过改变你，我也知道改变一个人是不可能的事，我也不知道为什么，我心软的坏毛病一直改不掉，我也常常在想，如果我是个无情的人就好了，不用再为了那些感情而伤心，这件事过去了之后直到后来你跟乐子相处的很好，我很吃醋，但我知道你是自由的我没资格和身份去约束你，我也只能用师傅的身份去教育你不能伤害自己，我明白我不能越界，当时你跟乐子真的很亲密啊在我弹吉他的时候，我真的羡慕和吃醋到骨子里了，但是我只能默默的看着，因为我无能为力，因为你喜欢的那个人始终不会是我，不是我不想释怀不想放弃，但是放下简简单单的两个字哪有那么容易，有一次我忍不住了开玩笑的说你好没分寸我是想让你对乐子注意点，但是你改是改了但是对我有分寸，你不会知道我有多伤心的，我也不想让你知道，我不想让你有任何负担，怪我没用，是我不会像乐子一样，我不会聊天不会逗你开心连你伤心的时候我都不知道怎么安慰你才有用，如果我会就好了，如果你喜欢的是我就好了，还有，你跟乐子 表白了是吧，之前差点亲上了吧，其实这些我都看在眼里，疼在心里，还有什么是我不知道的呢？也许还有很多，也许没有了，没关系的，爱你是我的事，跟你没关系，你喜不喜欢我都没关系，我喜欢你就够了，我喜欢你不是我的错，你不喜欢我也不是你的错，我们都没错，我写这封信是想证明我爱你，我不后悔我没有拥有你，但我至少轰轰烈烈的爱过，不要说我以后能遇见更好的，哪有什么更好的，你就很好！我眼下只有你，我不要什么更好的，我之前被戳破的时候我很想勇敢一次，我也知道，爱一个人就要大胆说出来 但我真的不敢，我怕说出口就连朋友都没得做，还有一个原因是我去找他们，是我怕你被议论，无所谓，你现在过的很好我就不打扰你了，毕竟爱一个人就是希望她好，但我最后只是求你不要把我忘了，虽然我们注定只是人生中的过客，还有你真的很完美很好，不要再伤害自己了，相信自己，坚强点，不要说自己很差劲，你要记得你很好，你长很好看，你的眼睛又大又圆，每次我伤心你瞪大了眼睛双眼炯炯有神的，雪亮雪亮每次都能治愈我，如果你不相信的话，你就想想你还有个又蠢又怂的舔狗呢，我永远是你坚强的后盾，好了，故事就到这，我写的全都是真的，如果有半句假话，你想怎么样都行，答应我你以后要好好的，别老想着伤害自己 你真的很好，相遇已是上上签，我不敢再奢望跟你有以后，祝你以后找到一个很爱很爱你的人当对象。
+                    <br>祝你一切安好！
+                    <br>再见……
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <div class="text-center">
+                    <p class="text-love-primary font-romantic text-[clamp(1.5rem,3vw,2rem)] font-bold mb-2">
+</p>
+                    <!-- 删除了按钮区域 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 接受后的弹窗 -->
+    <div id="accept-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 opacity-0 pointer-events-none transition-opacity duration-500">
+        <div class="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full mx-4 transform scale-90 transition-transform duration-500">
+            <div class="text-center">
+                <div class="text-love-primary text-6xl mb-4">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <h2 class="text-love-primary text-2xl font-bold mb-4">我就知道你也爱我！</h2>
+                <p class="text-gray-700 mb-6">从现在开始，你就是我的全世界啦！</p>
+                <button id="close-modal-btn" class="px-6 py-3 bg-love-primary hover:bg-love-dark text-white rounded-full font-bold transition-colors duration-300">
+                    拥抱这份爱
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 粒子爱心动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const particlesContainer = document.getElementById('particles-container');
+            const particlesCanvas = document.getElementById('particles-canvas');
+            const loadingText = document.getElementById('loading-text');
+            const confessionPage = document.getElementById('confession-page');
+            // 删除了按钮引用
+            const acceptModal = document.getElementById('accept-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            
+            // 设置Canvas尺寸
+            const setCanvasSize = () => {
+                particlesCanvas.width = window.innerWidth;
+                particlesCanvas.height = window.innerHeight;
+            };
+            
+            setCanvasSize();
+            window.addEventListener('resize', setCanvasSize);
+            
+            const ctx = particlesCanvas.getContext('2d');
+            const particles = [];
+            // 增加粒子数量
+            const particleCount = 800;
+            let heartPoints = [];
+            let animationComplete = false;
+            
+            // 生成爱心形状的点
+            const generateHeartPoints = (count, size, centerX, centerY) => {
+                const points = [];
+                for (let i = 0; i < count; i++) {
+                    const t = (i / count) * Math.PI * 2;
+                    // 爱心曲线参数方程
+                    const x = 16 * Math.pow(Math.sin(t), 3);
+                    const y = 13 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t);
+                    
+                    // 调整大小和位置 - 放大5倍
+                    points.push({
+                        x: centerX + x * size * 5,
+                        y: centerY - y * size * 5 // 负号是因为Canvas的y轴向下
+                    });
+                }
+                return points;
+            };
+            
+            // 创建粒子
+            const createParticles = () => {
+                particles.length = 0;
+                heartPoints = generateHeartPoints(
+                    100, 
+                    Math.min(window.innerWidth, window.innerHeight) * 0.0015, 
+                    window.innerWidth / 2, 
+                    window.innerHeight / 2
+                );
+                
+                for (let i = 0; i < particleCount; i++) {
+                    // 随机位置，从底部开始
+                    const startX = Math.random() * window.innerWidth;
+                    const startY = window.innerHeight + Math.random() * 100;
+                    
+                    // 目标位置 - 从爱心点中随机选择
+                    const targetPoint = heartPoints[Math.floor(Math.random() * heartPoints.length)];
+                    
+                    particles.push({
+                        x: startX,
+                        y: startY,
+                        targetX: targetPoint.x,
+                        targetY: targetPoint.y,
+                        size: Math.random() * 2 + 1,
+                        // 减慢速度，原来的速度是 Math.random() * 1 + 0.5
+                        speed: Math.random() * 0.5 + 0.25, 
+                        color: `rgba(${Math.floor(Math.random() * 50) + 205}, ${Math.floor(Math.random() * 50) + 75}, ${Math.floor(Math.random() * 50) + 145}, ${Math.random() * 0.5 + 0.5})`
+                    });
+                }
+            };
+            
+            // 绘制粒子
+            const drawParticles = () => {
+                ctx.clearRect(0, 0, particlesCanvas.width, particlesCanvas.height);
+                
+                let allParticlesArrived = true;
+                
+                particles.forEach(particle => {
+                    // 计算到目标的距离
+                    const dx = particle.targetX - particle.x;
+                    const dy = particle.targetY - particle.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    // 如果还没到达目标，移动粒子
+                    if (distance > 1) {
+                        particle.x += (dx / distance) * particle.speed;
+                        particle.y += (dy / distance) * particle.speed;
+                        allParticlesArrived = false;
+                    }
+                    
+                    // 绘制粒子
+                    ctx.fillStyle = particle.color;
+                    ctx.beginPath();
+                    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+                
+                // 如果所有粒子都到达了目标位置
+                if (allParticlesArrived && !animationComplete) {
+                    animationComplete = true;
+                    // 显示文字
+                    loadingText.textContent = "准备中，请稍等....";
+                    
+                    // 延迟后淡出粒子容器，显示表白页面 - 增加延迟时间1秒
+                    setTimeout(() => {
+                        loadingText.textContent = "";
+                        particlesContainer.classList.add('opacity-0');
+                        setTimeout(() => {
+                            particlesContainer.classList.add('hidden');
+                            confessionPage.classList.remove('hidden');
+                            confessionPage.classList.add('opacity-100');
+                            
+                            // 添加格子出现动画
+                            const titleBox = confessionPage.querySelector('.max-w-3xl:first-child');
+                            const contentBox = confessionPage.querySelector('.max-w-3xl:last-child');
+                            
+                            titleBox.classList.add('translate-y-0', 'opacity-100');
+                            titleBox.classList.remove('translate-y-10', 'opacity-0');
+                            
+                            setTimeout(() => {
+                                contentBox.classList.add('translate-y-0', 'opacity-100');
+                                contentBox.classList.remove('translate-y-10', 'opacity-0');
+                            }, 300);
+                        }, 1000);
+                    }, 3500); // 原延迟时间1500ms + 增加的2000ms
+                }
+                
+                requestAnimationFrame(drawParticles);
+            };
+            
+            // 页面首次点击后同时启动粒子和音乐
+            function startExperience() {
+                // 播放音乐
+                document.getElementById('bg-music').play().catch(error => {
+                    console.error('音乐播放失败:', error);
+                    document.getElementById('playButton').classList.remove('hidden');
+                });
+                // 创建粒子
+                createParticles();
+                // 启动粒子动画
+                drawParticles();
+                // 移除事件监听器，确保只触发一次
+                document.removeEventListener('click', startExperience);
+                document.removeEventListener('touchstart', startExperience);
+            }
+
+            // 添加点击和触摸事件监听器
+            document.addEventListener('click', startExperience);
+            document.addEventListener('touchstart', startExperience);
+
+            // 添加视觉提示，引导用户点击
+               const startPrompt = document.createElement('div');
+               startPrompt.className = 'fixed inset-0 flex items-center justify-center bg-black/70 z-50';
+               startPrompt.innerHTML = `
+                   <div class="text-white text-center p-8 rounded-lg">
+                       <h2 class="text-3xl mb-4">点击开始体验</h2>
+                       <p class="text-xl">粒子动画和音乐会同时启动</p>
+                   </div>
+               `;
+               document.body.appendChild(startPrompt);
+
+               function startExperience() {
+                   // 移除提示层
+                   document.body.removeChild(startPrompt);
+                   // 播放音乐
+                   document.getElementById('bg-music').play().catch(error => {
+                       console.error('音乐播放失败:', error);
+                       document.getElementById('playButton').classList.remove('hidden');
+                   });
+                   // 创建粒子
+                   createParticles();
+                   // 启动粒子动画
+                   drawParticles();
+                   // 移除事件监听器
+                   document.removeEventListener('click', startExperience);
+                   document.removeEventListener('touchstart', startExperience);
+               }
+
+               // 添加事件监听器（在函数定义后）
+               document.addEventListener('click', startExperience);
+               document.addEventListener('touchstart', startExperience);
+            
+            // 删除了按钮事件处理
+            
+            // 关闭弹窗按钮
+            closeModalBtn.addEventListener('click', () => {
+                acceptModal.classList.add('opacity-0', 'pointer-events-none');
+                acceptModal.querySelector('div').classList.remove('scale-100');
+                acceptModal.querySelector('div').classList.add('scale-90');
+            });
+        });
+    </script>
+
+
+    </body></html>
